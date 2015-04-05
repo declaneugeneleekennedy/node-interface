@@ -26,6 +26,35 @@ module.exports.testProperImplementation = function(test) {
     test.done();
 };
 
+module.exports.testMultipleImplementation = function(test) {
+    test.expect(1);
+
+    var i1 = {
+        name: 'InterfaOne',
+        method: {
+            oneMethod: ['arg1']
+        }
+    };
+
+    var i2 = {
+        name: 'InterfaceTwo',
+        method: {
+            twoMethod: ['arg1', 'arg2']
+        }
+    };
+
+    var object = {
+        oneMethod: function(arg1) {},
+        twoMethod: function(arg1, arg2) {}
+    };
+
+    test.doesNotThrow(function() {
+        Implements(object, [i1, i2]);
+    });
+
+    test.done();
+};
+
 module.exports.testMethodNotFound = function(test) {
     test.expect(1);
 
