@@ -12,7 +12,7 @@ incompatible implementations is easier if they're validated explicitly.
 ### Declaring an interface
 An interface is simply a node module which describes an implementation:
 
-```
+```javascript
 module.exports.myInterface = {
     name: "MyInterface",
     method: {
@@ -29,7 +29,7 @@ assigned to their key is an array of expected arguments.
 ### Checking an interface
 The module exports a single function which can be used to validate an interface:
 
-```
+```javascript
 var implements = require('node-interface');
 var interface  = require('./my-interface');
 var object     = require('./my-object');
