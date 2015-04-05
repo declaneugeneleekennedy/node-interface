@@ -2,9 +2,9 @@
   "name": "node-interface",
   "version": "1.0.0",
   "description": "A simple interface implementation for Node to assist with using strategy patterns",
-  "main": "index.js",
+  "main": "lib/interface.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
