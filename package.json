@@ -1,0 +1,22 @@
+{
+  "name": "node-interface",
+  "version": "1.0.0",
+  "description": "A simple interface implementation for Node to assist with using strategy patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimjambongs/node-interface.git"
+  },
+  "author": "Declan Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimjambongs/node-interface/issues"
+  },
+  "homepage": "https://github.com/jimjambongs/node-interface",
+  "dependencies": {
+    "nodeunit": "^0.9.1"
+  }
+}
